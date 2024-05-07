@@ -9,6 +9,23 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    position: relative; /* Add relative positioning to the body */
+}
+
+.alert-message {
+    display: none;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Set a fixed position */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 999; /* Ensure the message appears above other content */
 }
 
 .container {

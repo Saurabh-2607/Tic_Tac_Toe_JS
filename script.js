@@ -26,7 +26,11 @@ const tic_tac_toe = {
 
     make_play(position) {
         if (this.gameover || this.board[position] !== ' ') {
-            alert('This cell has already been played! Please select another cell.');
+            const alertMessage = document.getElementById('alert-message');
+            alertMessage.style.display = 'block';
+            setTimeout(() => {
+                alertMessage.style.display = 'none';
+            }, 2000); // Hide the alert message after 2 seconds
             return false;
         }
 
