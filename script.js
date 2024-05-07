@@ -25,7 +25,15 @@ const tic_tac_toe = {
     },
 
     make_play(position) {
-        if (this.gameover || this.board[position] !== ' ') {
+        if (this.gameover) {
+            const gameOverMessage = document.getElementById('game-over-message');
+            gameOverMessage.style.display = 'block';
+            setTimeout(() => {
+                gameOverMessage.style.display = 'none';
+            }, 2000); // Hide the game over message after 2 seconds
+            return false;
+        }
+        if (this.board[position] !== ' ') {
             const alertMessage = document.getElementById('alert-message');
             alertMessage.style.display = 'block';
             setTimeout(() => {

@@ -28,6 +28,22 @@ body {
     z-index: 999; /* Ensure the message appears above other content */
 }
 
+.game-over-message {
+    display: none;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* Set a fixed position */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 999; /* Ensure the message appears above other content */
+}
+
 .container {
     text-align: center;
 }
