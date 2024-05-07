@@ -25,7 +25,10 @@ const tic_tac_toe = {
     },
 
     make_play(position) {
-        if (this.gameover || this.board[position] !== ' ') return false;
+        if (this.gameover || this.board[position] !== ' ') {
+            alert('This cell has already been played! Please select another cell.');
+            return false;
+        }
 
         const currentSymbol = this.symbols.options[this.symbols.turn_index];
         this.board[position] = currentSymbol;

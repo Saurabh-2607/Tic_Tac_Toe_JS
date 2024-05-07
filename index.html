@@ -9,19 +9,22 @@
 <body>
     <div class="container">
         <h1>Tic Tac Toe</h1>
+        <!-- <div id="alert-message" class="alert-message" style="display: none;">
+            <p>This cell has already been played! Please select another cell.</p>
+        </div> -->
         <div id="board" class="board">
-            <div class="cell-0 cell " onclick="playerMove(0)"></div>
-            <div class="cell-1 cell " onclick="playerMove(1)"></div>
-            <div class="cell-2 cell " onclick="playerMove(2)"></div>
-            <div class="cell-3 cell " onclick="playerMove(3)"></div>
-            <div class="cell-4 cell " onclick="playerMove(4)"></div>
-            <div class="cell-5 cell " onclick="playerMove(5)"></div>
-            <div class="cell-6 cell " onclick="playerMove(6)"></div>
-            <div class="cell-7 cell " onclick="playerMove(7)"></div>
-            <div class="cell-8 cell " onclick="playerMove(8)"></div>
+            <div class="cell-0 cell" onclick="tic_tac_toe.make_play(0)"></div>
+            <div class="cell-1 cell" onclick="tic_tac_toe.make_play(1)"></div>
+            <div class="cell-2 cell" onclick="tic_tac_toe.make_play(2)"></div>
+            <div class="cell-3 cell" onclick="tic_tac_toe.make_play(3)"></div>
+            <div class="cell-4 cell" onclick="tic_tac_toe.make_play(4)"></div>
+            <div class="cell-5 cell" onclick="tic_tac_toe.make_play(5)"></div>
+            <div class="cell-6 cell" onclick="tic_tac_toe.make_play(6)"></div>
+            <div class="cell-7 cell" onclick="tic_tac_toe.make_play(7)"></div>
+            <div class="cell-8 cell" onclick="tic_tac_toe.make_play(8)"></div>
         </div>
         <div id="result" class="result"></div>
-        <button onclick="resetGame()">Play Again</button>
+        <button onclick="tic_tac_toe.restart()">Play Again</button>
     </div>
     <script src="script.js"></script>
 </body>
