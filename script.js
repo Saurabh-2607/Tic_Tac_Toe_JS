@@ -1,3 +1,5 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 const tic_tac_toe = {
     board: [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
     symbols: {
