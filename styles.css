@@ -46,6 +46,7 @@ body {
 
 .container {
     text-align: center;
+    width: 324px;
 }
 
 .board {
